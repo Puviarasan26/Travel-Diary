@@ -74,7 +74,7 @@ class MainActivity : ComponentActivity() {
             Screen.Login.route -> "Login"
             Screen.Register.route -> "Register"
             Screen.Home.route -> "Home"
-            else -> "App"
+            else -> "Diary for Explorers"
         }
     }
 }
