@@ -93,7 +93,6 @@ fun LoginScreen(navHostController: NavHostController) {
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            // 🆕 Register text
             Row(
                 horizontalArrangement = Arrangement.Center,
                 modifier = Modifier.fillMaxWidth()
@@ -107,7 +106,7 @@ fun LoginScreen(navHostController: NavHostController) {
                     "Register",
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Bold,
-                    modifier = Modifier.clickable { Screen.Register.route }
+                    modifier = Modifier.clickable { navHostController.navigate(Screen.Register.route) }
                 )
 
             }
