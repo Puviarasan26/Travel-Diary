@@ -53,7 +53,7 @@ fun RegisterScreen(navHostController: NavHostController) {
             OutlinedTextField(
                 value = name,
                 onValueChange = { name = it },
-                placeholder = { Text("Full Name") },
+                label = { Text("Full Name") },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(10.dp),
                 singleLine = true
@@ -62,7 +62,7 @@ fun RegisterScreen(navHostController: NavHostController) {
             OutlinedTextField(
                 value = email,
                 onValueChange = { email = it },
-                placeholder = { Text("Email") },
+                label = { Text("Email") },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(10.dp),
                 keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Email),
@@ -72,7 +72,7 @@ fun RegisterScreen(navHostController: NavHostController) {
             OutlinedTextField(
                 value = password,
                 onValueChange = { password = it },
-                placeholder = { Text("Password") },
+                label = { Text("Password") },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(10.dp),
                 singleLine = true,
@@ -82,7 +82,7 @@ fun RegisterScreen(navHostController: NavHostController) {
             OutlinedTextField(
                 value = confirmPassword,
                 onValueChange = { confirmPassword = it },
-                placeholder = { Text("Confirm Password") },
+                label = { Text("Confirm Password") },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(10.dp),
                 singleLine = true,
